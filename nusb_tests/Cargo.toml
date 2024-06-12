@@ -6,8 +6,7 @@ edition = "2021"
 
 [dependencies]
 
-rusb = "0.9.4"
+nusb = "0.1.9"
 
-usb-ids = "1.2024.3"
+futures-lite = "2.3.0"
 
-libusb1-sys = "0.7.0"

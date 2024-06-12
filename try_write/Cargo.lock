@@ -52,6 +52,7 @@ dependencies = [
 name = "panduza-rust-platform"
 version = "0.1.0"
 dependencies = [
+ "libusb1-sys",
  "rusb",
  "usb-ids",
 ]

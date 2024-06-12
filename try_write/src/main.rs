@@ -6,6 +6,8 @@ use std::time::Duration;
 
 use usb_ids::FromId;
 
+extern crate libusb1_sys as ffi;
+
 struct UsbDevice<T: UsbContext> {
     handle: DeviceHandle<T>,
     language: Language,
@@ -17,6 +19,12 @@ fn main() {
 }
 
 fn list_devices() -> Result<()> {
+
+    let version: *const ffi::libusb_version = unsafe { ffi::libusb_get_version() };
+    unsafe {
+        println!("libusb v{}.{}.{}.{}", (*version).major, (*version).minor, (*version).micro, (*version).nano );
+    }
+
     let timeout = Duration::from_secs(1);
 
     for device in DeviceList::new()?.iter() {
@@ -32,6 +40,7 @@ fn list_devices() -> Result<()> {
         if vid != 0x2341 {
             continue;
         }
+
 
         // let mut usb_device_opt = device.open();
         // match usb_device_opt {
