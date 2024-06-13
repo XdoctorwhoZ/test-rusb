@@ -1,0 +1,10 @@
+[package]
+name = "test_rs-usbtmc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+#
+usbtmc-message = { git = "https://github.com/Panduza/pza-rust-usbtmc-message" }
+
