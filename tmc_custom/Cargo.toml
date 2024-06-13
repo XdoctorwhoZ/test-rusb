@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 
 #
-usbtmc-message = { git = "https://github.com/Panduza/pza-rust-usbtmc-message" }
+usbtmc-message = { git = "https://github.com/Panduza/pza-rust-usbtmc-message", tag="0.0.0" }
 

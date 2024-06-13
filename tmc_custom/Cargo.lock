@@ -18,7 +18,7 @@ dependencies = [
 [[package]]
 name = "usbtmc-message"
 version = "0.0.0"
-source = "git+https://github.com/Panduza/pza-rust-usbtmc-message#1a639be858f284073a8df506405ffc03796d6803"
+source = "git+https://github.com/Panduza/pza-rust-usbtmc-message?tag=0.0.0#89d951916e9e36ea629d9e5bffad83e31779a870"
 dependencies = [
  "byteorder",
 ]
