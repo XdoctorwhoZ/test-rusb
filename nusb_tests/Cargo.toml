@@ -10,3 +10,4 @@ nusb = "0.1.9"
 
 futures-lite = "2.3.0"
 
+byteorder = "1.4"

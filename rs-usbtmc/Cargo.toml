@@ -1,0 +1,9 @@
+[package]
+name = "test_rs-usbtmc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+#
+rs-usbtmc = "0.1.1"
